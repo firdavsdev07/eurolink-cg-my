@@ -67,7 +67,7 @@ const Contact = () => {
                 <a
                   className=" mx-2 hover:text-colorT"
                   target={"_blank"}
-                  href="https://t.me/Star329293"
+                  href="https://t.me/Star271524"
                 >
                   Telegram
                 </a>
