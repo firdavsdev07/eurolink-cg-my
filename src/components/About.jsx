@@ -29,7 +29,7 @@ const About = () => {
             Briefly about myself
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            I am a frontend developer, I am 18 years old, I graduated from
+            I am a frontend developer, I am 19 years old, I graduated from
             frontend programming course in 2022, I am currently working on my
             own
           </p>
