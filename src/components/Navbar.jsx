@@ -1,60 +1,72 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { AiOutlineMenu } from "react-icons/ai";
-const Navbar = () => {
+const Navbar = ({ content, language, setLanguage }) => {
   const [menu, setMenu] = useState(false);
   const handleChange = () => {
     setMenu(!menu);
   };
   return (
     <div>
-      <div className=" z-10 bg-menuC fixed top-0 inset-x-0 flex flex-row  p-5 md:px-32 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-        <nav className="mx-auto  text-lightText hidden md:flex gap-5 font-medium p-1 cursor-pointer">
+      <div className="z-10 bg-menuC fixed top-0 inset-x-0 flex flex-row  p-5 md:text-sm2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+        <nav className="mx-auto hidden md:flex gap-5 font-medium p-1 cursor-pointer">
           <Link
             to="home"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Home
+            {content.navbar__menu1}
           </Link>
           <Link
             to="about"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            About
+            {content.navbar__menu2}
           </Link>
           <Link
-            to="skills"
+            to="work"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Skills
+            {content.navbar__menu3}
           </Link>
           <Link
-            to="works"
+            to="formation"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Works
+            {content.navbar__menu4}
           </Link>
 
           <Link
-            to="contact"
+            to="team"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Contact
+            {content.navbar__menu5}
+          </Link>
+          <Link className="Language">
+            <select
+              id="countries"
+              value={language}
+              onChange={(e) => {
+                setLanguage(e.target.value);
+              }}
+            >
+              <option className="">germany</option>
+              <option className="">uzb</option>
+            </select>
           </Link>
         </nav>
         <div
@@ -76,47 +88,58 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Home
+            {content.navbar__menu1}
           </Link>
           <Link
             to="about"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            About
+            {content.navbar__menu2}
           </Link>
           <Link
-            to="skills"
+            to="work"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Skills
+            {content.navbar__menu3}
           </Link>
           <Link
-            to="works"
+            to="formation"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Works
+            {content.navbar__menu4}
           </Link>
 
           <Link
-            to="contact"
+            to="team"
             spy={true}
             smooth={true}
             duration={500}
-            className=" hover:text-colorT px-3 transition-all cursor-pointer"
+            className=" text-colorT text-sm transition-all cursor-pointer"
           >
-            Contact
+            {content.navbar__menu5}
           </Link>
+          <div className="btn-group">
+            <select
+              value={language}
+              onChange={(e) => {
+                setLanguage(e.target.value);
+              }}
+            >
+              <option>germany</option>
+              <option>uzb</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>

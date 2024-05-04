@@ -5,9 +5,9 @@ export default {
     extend: {
       colors: {
         brightBackground: "#FDF8EE",
-        colorT: "#fbc210",
-        lightText: "#959595",
-        menuC:"rgba(7,6,6,0.5) "
+        colorT: "rgb(226 232 240)",
+        lightText: "rgb(248 250 252)",
+        menuC: "rgba(0,0,0,0.4) ",
       },
     },
   },

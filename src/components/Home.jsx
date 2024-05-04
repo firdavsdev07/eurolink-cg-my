@@ -1,34 +1,41 @@
 import React from "react";
-import img from "../assets/images/men.png";
-import Button from "../layout/Button";
+import bg from "../assets/bg-home.jpg";
 import { Link } from "react-scroll";
-
-const Home = () => {
+export default function Example({ content }) {
   return (
-    <div className=" min-h-[70vh] flex flex-col md:flex-row md:justify-between items-center md:mx-32 mx-5 mt-32">
-      <div className=" md:w-2/4 text-center">
-        <h2 className=" text-5xl text-lightText font-semibold leading-tight">
-          I am a frontend
-          <span className="text-colorT"> Developer</span>
-        </h2>
-        <p className=" text-lightText mt-5 text-start">
-          Choose the right direction, make your dreams come true, if you also
-          need a website and web applications, then you are on the right track.
-          Check out my personal website and learn about me. For more information
-          and to own similar sites, contact me and get answers to your
-          questions.
-        </p>
-
-        <Link to="contact" spy={true} smooth={true} duration={500}>
-          <Button title="Contact Us" />
-        </Link>
-      </div>
-
-      <div className=" w-full md:w-2/5 rotate-0">
-        <img src={img} alt="img" />
+    <div
+      className="bg-cover bg-center h-screen"
+      style={{ backgroundImage: `url(${bg})` }}
+    >
+      <div className="relative  isolate px-6 pt-8 lg:px-6 ">
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="text-center">
+            <h1 className=" text-lightText text-4xl font-bold tracking-tight sm:text-6xl">
+              EuroLink Consulting Group (ECG)
+            </h1>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                {content.navbar__menu2}
+              </Link>
+              <Link
+                to="work"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="text-sm font-semibold leading-6 text-lightText"
+              >
+                {content.navbar__menu3} <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
-};
-
-export default Home;
+}

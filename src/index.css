@@ -5,8 +5,3 @@
 @tailwind utilities;
 
 
-body{
-    background-image:url(./assets/images/body-bg.png) ;
-    background-color: #131313;
-    font-family: 'Playpen Sans', cursive;
-}
