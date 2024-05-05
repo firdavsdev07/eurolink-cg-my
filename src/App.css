@@ -26,3 +26,7 @@
   background: rgba(0,0,0,0);
   padding: 0 0.5rem;
 }
+.service__page__text span{
+  font-weight: bold;
+  font-size: 1rem;
+}

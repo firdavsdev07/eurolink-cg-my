@@ -61,7 +61,7 @@ const Navbar = ({ content, language, setLanguage }) => {
             {content.navbar__menu5}
           </Link>
           <Link
-            to="l"
+            to="service"
             spy={true}
             smooth={true}
             duration={500}
@@ -70,7 +70,7 @@ const Navbar = ({ content, language, setLanguage }) => {
             {content.navbar__menu6}
           </Link>
           <Link
-            to="l"
+            to="road"
             spy={true}
             smooth={true}
             duration={500}
@@ -173,7 +173,7 @@ const Navbar = ({ content, language, setLanguage }) => {
             {content.navbar__menu5}
           </Link>
           <Link
-            to="l"
+            to="service"
             spy={true}
             smooth={true}
             duration={500}
@@ -182,7 +182,7 @@ const Navbar = ({ content, language, setLanguage }) => {
             {content.navbar__menu6}
           </Link>
           <Link
-            to="l"
+            to="road"
             spy={true}
             smooth={true}
             duration={500}

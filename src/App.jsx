@@ -8,6 +8,10 @@ import About from "./components/About";
 import Works from "./components/Works";
 import Formation from "./components/Formation";
 import Team from "./components/Team";
+import Services from "./components/Services";
+import Road from "./components/Road";
+import Carousel from "./components/Carousel";
+
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -49,6 +53,15 @@ const App = () => {
 
           <div id="team">
             <Team content={content} />
+          </div>
+          <div id="service">
+            <Services content={content} />
+          </div>
+          <div>
+            <Carousel />
+          </div>
+          <div id="road">
+            <Road content={content} />
           </div>
         </main>
 
