@@ -11,13 +11,13 @@ import Team from "./components/Team";
 import Footer from "./components/Footer";
 
 const App = () => {
-  const [language, setLanguage] = useState("germany");
+  const [language, setLanguage] = useState("DE");
   const [content, setContent] = useState({});
 
   useEffect(() => {
-    if (language === "germany") {
+    if (language === "DE") {
       setContent(Translation.germany);
-    } else if (language === "uzb") {
+    } else if (language === "UZ") {
       setContent(Translation.uzb);
     }
   }, [language]);
