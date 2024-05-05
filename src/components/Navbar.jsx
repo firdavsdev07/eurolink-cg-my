@@ -10,9 +10,9 @@ const Navbar = ({ content, language, setLanguage }) => {
   return (
     <div>
       <div className="z-10   bg-menuC fixed top-0 inset-x-0  flex-row  p-5 md:text-sm2 shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
-        <nav className="mx-auto hidden  md:flex gap-5 items-center font-normal p-1 cursor-pointer ">
+        <nav className="mx-auto hidden  xl:flex gap-5 items-center font-normal p-1 cursor-pointer ">
           <div>
-            <img className="logo w-24 p-0" src={Logo} alt="" />
+            <img className="w-24 p-0" src={Logo} alt="" />
           </div>
           <Link
             to="home"
@@ -110,18 +110,21 @@ const Navbar = ({ content, language, setLanguage }) => {
           </Link>
         </nav>
         <div
-          className="flex cursor-pointer z-10 text-colorT md:hidden"
+          className="flex  z-10 cursor-pointer  text-colorT xl:hidden"
           onClick={handleChange}
         >
           <div className="p-2">
-            <AiOutlineMenu size={30} />
+            <AiOutlineMenu className="menu z-50" size={30} />
+          </div>
+          <div>
+            <img className="logo w-24 p-0" src={Logo} alt="" />
           </div>
         </div>
         {/* mobile menu */}
         <div
           className={` ${
-            menu ? " z-50 translate-y-0" : "-translate-y-full"
-          } md:hidden  flex flex-col absolute bg-menuC text-lightText left-0 top-0 font-medium text-1xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300 `}
+            menu ? " z-10 translate-y-0" : "-translate-y-full"
+          } xl:hidden  flex flex-col absolute bg-menuC text-lightText left-0 top-0 font-medium text-1xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300 `}
         >
           <Link
             to="home"
@@ -205,7 +208,7 @@ const Navbar = ({ content, language, setLanguage }) => {
           >
             {content.navbar__menu9}
           </Link>
-          <div className="language2">
+          <div className="language__mobile">
             <select
               value={language}
               onChange={(e) => {

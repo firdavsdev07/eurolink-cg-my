@@ -1,7 +1,26 @@
+/* navbar styles */
 .language select{
   right: 1rem;
   top: 2rem;
   position: absolute;
+  outline: 2px solid;
+  color: aliceblue;
+  background: rgba(0,0,0,0);
+  padding: 0 0.5rem;
+}
+.menu{
+  top: 0.7rem;
+  left: 0.7rem;
+  z-index: 111111 ;
+  position: absolute;
+}
+/* mobile logo */
+.logo{
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+}
+.language__mobile select{
   outline: 2px solid;
   color: aliceblue;
   background: rgba(0,0,0,0);
