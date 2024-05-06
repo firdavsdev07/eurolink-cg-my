@@ -26,10 +26,15 @@
   background: rgba(0,0,0,0);
   padding: 0 0.5rem;
 }
+.work__page span{
+  font-weight: bold;
+
+}
 .service__page__text span{
   font-weight: bold;
   font-size: 1rem;
 }
+
 .service__page__text .italic{
   font-style: italic;
   font-weight: 400;

@@ -9,7 +9,12 @@ export default function Example({ content }) {
         </h2>
         <figure className="mt-10">
           <blockquote className="text-center  text-xl leading-7 text-gray-900 sm:text-lg sm:leading-7">
-            <p>{content.work__page2}</p>
+            <p
+              className="work__page"
+              dangerouslySetInnerHTML={{
+                __html: content.work__page2,
+              }}
+            />
           </blockquote>
         </figure>
       </div>
