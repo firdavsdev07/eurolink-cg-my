@@ -16,11 +16,11 @@ export default function Example({ content }) {
   ];
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+      <div className="mx-auto   py-4 sm:px-6 sm:py-32 lg:px-8">
         {callouts.map((callout, index) => (
           <div
             key={index}
-            className="relative isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+            className="relative mb-7 isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
           >
             <svg
               viewBox="0 0 1024 1024"
@@ -41,7 +41,7 @@ export default function Example({ content }) {
                 </radialGradient>
               </defs>
             </svg>
-            <div className="mx-auto max-w-sm text-center lg:mx-0 lg:flex-auto lg:py-16 lg:text-left">
+            <div className="mx-auto max-w-sm text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                 {callout.name}
               </h2>
@@ -49,9 +49,9 @@ export default function Example({ content }) {
                 {callout.description}
               </p>
             </div>
-            <div className=" relative  mt-3 h-screen lg:mt-8">
+            <div className="relative mt-0 h-screen lg:mt-8">
               <img
-                className=" absolute left-0 h-96 top-10 w-[3/5] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                className="absolute left-0 h-screen top-24 w-[5/6] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src={callout.imageSrc}
                 alt="App screenshot"
                 // width={}
