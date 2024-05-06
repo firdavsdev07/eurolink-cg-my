@@ -11,6 +11,7 @@ import Team from "./components/Team";
 import Services from "./components/Services";
 import Road from "./components/Road";
 import Carousel from "./components/Carousel";
+import Results from "./components/Results";
 
 import Footer from "./components/Footer";
 
@@ -62,6 +63,9 @@ const App = () => {
           </div>
           <div id="road">
             <Road content={content} />
+          </div>
+          <div id="results">
+            <Results content={content} />
           </div>
         </main>
 

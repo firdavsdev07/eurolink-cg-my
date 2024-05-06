@@ -38,12 +38,12 @@ export default function Example({ content }) {
           <div className="lg:pr-4">
             <div className="lg:max-w-lg">
               <h1 className="mt-2 text-3xl font-bold tracking-tight text-green-500 sm:text-4xl">
-                {content.services__page__header}
+                {content.road__page__header}
               </h1>
               <p
                 className="mt-6 service__page__text text-sm leading-8 text-gray-700"
                 dangerouslySetInnerHTML={{
-                  __html: content.services__page__description,
+                  __html: content.road__page__description,
                 }}
               />
             </div>

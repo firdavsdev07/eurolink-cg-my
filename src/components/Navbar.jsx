@@ -79,7 +79,7 @@ const Navbar = ({ content, language, setLanguage }) => {
             {content.navbar__menu7}
           </Link>
           <Link
-            to="l"
+            to="results"
             spy={true}
             smooth={true}
             duration={500}
@@ -191,7 +191,7 @@ const Navbar = ({ content, language, setLanguage }) => {
             {content.navbar__menu7}
           </Link>
           <Link
-            to="l"
+            to="results"
             spy={true}
             smooth={true}
             duration={500}
