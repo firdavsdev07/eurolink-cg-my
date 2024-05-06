@@ -1,62 +1,69 @@
+import React from "react";
 import ResultUser1 from "../assets/results/user1.jpg";
+// import ResultUser2 from "../assets/results/user2.png";
+import ResultUser3 from "../assets/results/user3.jpg";
+import ResultUser4 from "../assets/results/user4.jpg";
+import ResultUser5 from "../assets/results/user5.jpg";
+import ResultUser6 from "../assets/results/user6.jpg";
+import ResultUser7 from "../assets/results/user7.jpg";
 
-export default function Example({ content }) {
+function Results({ content }) {
   const callouts = [
     {
       name: "Yusupova Sevinchoy",
       imageSrc: ResultUser1,
       description: content.results__page__description1,
     },
+    // {
+    //   name: "Yusupova Sevinchoy",
+    //   imageSrc: ResultUser2,
+    //   description: content.results__page__description2,
+    // },
     {
-      name: "Yusupova Sevinchoy", // This seems duplicated, ensure it's intended
-      imageSrc: ResultUser1,
-      description: content.results__page__description2, // Ensure this property is defined in content
+      name: "Charos Boltaeva ",
+      imageSrc: ResultUser3,
+      description: content.results__page__description3,
+    },
+    {
+      name: "Inomjonova E'zozakhon ",
+      imageSrc: ResultUser4,
+      description: content.results__page__description4,
+    },
+    {
+      name: "Gulinargiz Khurramova ",
+      imageSrc: ResultUser5,
+      description: content.results__page__description5,
+    },
+    {
+      name: "Marjona Kuvondikova ",
+      imageSrc: ResultUser6,
+      description: content.results__page__description6,
+    },
+    {
+      name: "Abdukakhkhorov Mukhammadjon",
+      imageSrc: ResultUser7,
+      description: content.results__page__description7,
     },
   ];
-
   return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+    <div className="Results__container">
+      <div className="flex flex-wrap items-center justify-center mt-10">
         {callouts.map((callout, index) => (
-          <div
-            key={index}
-            className="relative isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
-          >
-            <svg
-              viewBox="0 0 1024 1024"
-              className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
-              aria-hidden="true"
-            >
-              <circle
-                cx={512}
-                cy={512}
-                r={512}
-                fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-                fillOpacity="0.7"
-              />
-              <defs>
-                <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
-                  <stop stopColor="#7775D6" />
-                  <stop offset={1} stopColor="#E935C1" />
-                </radialGradient>
-              </defs>
-            </svg>
-            <div className="mx-auto max-w-sm text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
-              <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                {callout.name}
-              </h2>
-              <p className="mt-6 text-md leading-8 text-slate-900">
-                {callout.description}
-              </p>
-            </div>
-            <div className="relative mt-16 h-screen lg:mt-8">
-              <img
-                className="absolute left-2 top-0 w-[1/2] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
-                src={callout.imageSrc}
-                alt="App screenshot"
-                // width={}
-                // height={1080}
-              />
+          <div className="p-4 max-h-full max-w-sm" key={callout.name + index}>
+            <div className="max-w-sm Results__container__cards   shadow ">
+              <a href="#" className="block">
+                <img className="rounded-t-lg" src={callout.imageSrc} alt="" />
+              </a>
+              <div className="p-5">
+                <a href="#" className="block">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-slate-900">
+                    {callout.name}
+                  </h5>
+                </a>
+                <p className="mb-3 font-normal text-slate-900">
+                  {callout.description}
+                </p>
+              </div>
             </div>
           </div>
         ))}
@@ -64,3 +71,5 @@ export default function Example({ content }) {
     </div>
   );
 }
+
+export default Results;

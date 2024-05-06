@@ -40,12 +40,6 @@
   font-style: normal;
   font-size: 1rem;
 }
-/* .results__image{
-  outline: 2px solid red;
+.Results__container__cards{
+  border: none;
 }
-.results__image_header{
-  outline: 2px solid black;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-} */

@@ -67,9 +67,10 @@ const App = () => {
           <div id="results">
             <Results content={content} />
           </div>
+          <div id="contact">
+            <Footer content={content} />
+          </div>
         </main>
-
-        <Footer />
       </div>
     </Router>
   );
