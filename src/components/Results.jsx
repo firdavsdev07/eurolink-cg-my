@@ -59,7 +59,7 @@ function Results({ content }) {
       description: content.results__page__description7,
     },
     {
-      name: "Yusupova Sevinchoy",
+      name: "Bui Thi Phuong ",
       imageSrc: ResultUser2,
       description: content.results__page__description2,
     },
