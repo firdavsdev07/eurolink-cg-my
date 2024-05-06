@@ -168,11 +168,11 @@ function Results({ content }) {
         {callouts.map((callout, index) => (
           <div className="p-4 max-h-full max-w-sm" key={callout.name + index}>
             <div className="max-w-sm Results__container__cards   shadow ">
-              <a href="#" className="block">
+              <a className="block">
                 <img className="rounded-t-lg" src={callout.imageSrc} alt="" />
               </a>
               <div className="p-5">
-                <a href="#" className="block">
+                <a className="block">
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-slate-900">
                     {callout.name}
                   </h5>
