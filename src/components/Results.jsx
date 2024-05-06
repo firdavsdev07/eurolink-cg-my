@@ -41,7 +41,7 @@ export default function Example({ content }) {
                 </radialGradient>
               </defs>
             </svg>
-            <div className="mx-auto max-w-sm text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <div className="mx-auto max-w-sm text-center lg:mx-0 lg:flex-auto lg:py-16 lg:text-left">
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
                 {callout.name}
               </h2>
@@ -49,9 +49,9 @@ export default function Example({ content }) {
                 {callout.description}
               </p>
             </div>
-            <div className="relative mt-16 h-screen lg:mt-8">
+            <div className=" relative  mt-3 h-screen lg:mt-8">
               <img
-                className="absolute left-2 h-screen top-0 w-[1/2] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                className=" absolute left-0 h-96 top-10 w-[3/5] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src={callout.imageSrc}
                 alt="App screenshot"
                 // width={}
