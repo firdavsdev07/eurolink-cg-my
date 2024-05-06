@@ -18,6 +18,13 @@ import ResultUser16 from "../assets/results/user16.jpg";
 import ResultUser17 from "../assets/results/user17.jpg";
 import ResultUser18 from "../assets/results/user18.jpg";
 import ResultUser19 from "../assets/results/user19.jpg";
+import ResultUser20 from "../assets/results/user20.jpg";
+import ResultUser21 from "../assets/results/user21.jpg";
+import ResultUser22 from "../assets/results/user22.jpg";
+import ResultUser23 from "../assets/results/user23.jpg";
+import ResultUser24 from "../assets/results/user24.jpg";
+import ResultUser25 from "../assets/results/user25.jpg";
+import ResultUser26 from "../assets/results/user26.jpg";
 
 function Results({ content }) {
   const callouts = [
@@ -26,7 +33,6 @@ function Results({ content }) {
       imageSrc: ResultUser1,
       description: content.results__page__description1,
     },
-
     {
       name: "Charos Boltaeva ",
       imageSrc: ResultUser3,
@@ -116,6 +122,41 @@ function Results({ content }) {
       name: "Khotamova Ezoza",
       imageSrc: ResultUser19,
       description: content.results__page__description19,
+    },
+    {
+      name: "Murotova Khusniyakhon",
+      imageSrc: ResultUser20,
+      description: content.results__page__description20,
+    },
+    {
+      name: "Makhmudov Shokhruhbek",
+      imageSrc: ResultUser21,
+      description: content.results__page__description21,
+    },
+    {
+      name: "Mamadaliev Islomjon",
+      imageSrc: ResultUser22,
+      description: content.results__page__description22,
+    },
+    {
+      name: "Rakhmatullayev Umidulla ",
+      imageSrc: ResultUser23,
+      description: content.results__page__description23,
+    },
+    {
+      name: "Makhmudov Ramziddin",
+      imageSrc: ResultUser24,
+      description: content.results__page__description24,
+    },
+    {
+      name: "Mamadalieva Mubinakhon",
+      imageSrc: ResultUser25,
+      description: content.results__page__description25,
+    },
+    {
+      name: "Akramjonova Khulkaroy",
+      imageSrc: ResultUser26,
+      description: content.results__page__description26,
     },
   ];
   return (
