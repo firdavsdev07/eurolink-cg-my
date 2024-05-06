@@ -10,7 +10,7 @@ import Formation from "./components/Formation";
 import Team from "./components/Team";
 import Services from "./components/Services";
 import Road from "./components/Road";
-import Carousel from "./components/Carousel";
+import Location from "./components/Location";
 import Results from "./components/Results";
 
 import Footer from "./components/Footer";
@@ -58,14 +58,15 @@ const App = () => {
           <div id="service">
             <Services content={content} />
           </div>
-          <div>
-            <Carousel />
-          </div>
+
           <div id="road">
             <Road content={content} />
           </div>
           <div id="results">
             <Results content={content} />
+          </div>
+          <div>
+            <Location />
           </div>
           <div id="contact">
             <Footer content={content} />
