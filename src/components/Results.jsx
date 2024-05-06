@@ -47,6 +47,9 @@ function Results({ content }) {
   ];
   return (
     <div className="Results__container">
+      <h1 className="mb-10 pb-12 mt-5 text-4xl text-center tracking-tight font-extrabold text-green-500">
+        {content.results__page__header}
+      </h1>
       <div className="flex flex-wrap items-center justify-center mt-10">
         {callouts.map((callout, index) => (
           <div className="p-4 max-h-full max-w-sm" key={callout.name + index}>
