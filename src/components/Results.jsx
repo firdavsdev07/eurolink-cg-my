@@ -1,11 +1,23 @@
 import React from "react";
 import ResultUser1 from "../assets/results/user1.jpg";
-// import ResultUser2 from "../assets/results/user2.png";
+import ResultUser2 from "../assets/results/user2.png";
 import ResultUser3 from "../assets/results/user3.jpg";
 import ResultUser4 from "../assets/results/user4.jpg";
 import ResultUser5 from "../assets/results/user5.jpg";
 import ResultUser6 from "../assets/results/user6.jpg";
 import ResultUser7 from "../assets/results/user7.jpg";
+import ResultUser8 from "../assets/results/user8.jpg";
+import ResultUser9 from "../assets/results/user9.jpg";
+import ResultUser10 from "../assets/results/user10.jpg";
+import ResultUser11 from "../assets/results/user11.jpg";
+import ResultUser12 from "../assets/results/user12.jpg";
+import ResultUser13 from "../assets/results/user13.jpg";
+import ResultUser14 from "../assets/results/user14.jpg";
+import ResultUser15 from "../assets/results/user15.jpg";
+import ResultUser16 from "../assets/results/user16.jpg";
+import ResultUser17 from "../assets/results/user17.jpg";
+import ResultUser18 from "../assets/results/user18.jpg";
+import ResultUser19 from "../assets/results/user19.jpg";
 
 function Results({ content }) {
   const callouts = [
@@ -14,11 +26,7 @@ function Results({ content }) {
       imageSrc: ResultUser1,
       description: content.results__page__description1,
     },
-    // {
-    //   name: "Yusupova Sevinchoy",
-    //   imageSrc: ResultUser2,
-    //   description: content.results__page__description2,
-    // },
+
     {
       name: "Charos Boltaeva ",
       imageSrc: ResultUser3,
@@ -43,6 +51,71 @@ function Results({ content }) {
       name: "Abdukakhkhorov Mukhammadjon",
       imageSrc: ResultUser7,
       description: content.results__page__description7,
+    },
+    {
+      name: "Yusupova Sevinchoy",
+      imageSrc: ResultUser2,
+      description: content.results__page__description2,
+    },
+    {
+      name: "Abdullokh Akhmadjonov",
+      imageSrc: ResultUser8,
+      description: content.results__page__description2,
+    },
+    {
+      name: "Malika Bayazova",
+      imageSrc: ResultUser9,
+      description: content.results__page__description9,
+    },
+    {
+      name: "Orzugul Murodova",
+      imageSrc: ResultUser10,
+      description: content.results__page__description10,
+    },
+    {
+      name: "Shakhriddin Korakhanov",
+      imageSrc: ResultUser11,
+      description: content.results__page__description11,
+    },
+    {
+      name: "Saida Sayduvalieva",
+      imageSrc: ResultUser12,
+      description: content.results__page__description12,
+    },
+    {
+      name: "Khurozova Marjona ",
+      imageSrc: ResultUser13,
+      description: content.results__page__description13,
+    },
+    {
+      name: "Homidov Bekhzod",
+      imageSrc: ResultUser14,
+      description: content.results__page__description14,
+    },
+    {
+      name: "Matnazarov Bunyod ",
+      imageSrc: ResultUser15,
+      description: content.results__page__description15,
+    },
+    {
+      name: "Khayitbayeva Shokhsanam ",
+      imageSrc: ResultUser16,
+      description: content.results__page__description16,
+    },
+    {
+      name: "Mukhtorov Khumoyunmirzo",
+      imageSrc: ResultUser17,
+      description: content.results__page__description17,
+    },
+    {
+      name: "Mukhtorov Javokhir",
+      imageSrc: ResultUser18,
+      description: content.results__page__description18,
+    },
+    {
+      name: "Khotamova Ezoza",
+      imageSrc: ResultUser19,
+      description: content.results__page__description19,
     },
   ];
   return (
