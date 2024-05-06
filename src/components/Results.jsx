@@ -1,5 +1,4 @@
 import ResultUser1 from "../assets/results/user1.jpg";
-import ResultUser2 from "../assets/results/user2.jpg";
 
 export default function Example({ content }) {
   const callouts = [
@@ -9,18 +8,19 @@ export default function Example({ content }) {
       description: content.results__page__description1,
     },
     {
-      name: "Bui Thi Phuong ",
-      imageSrc: ResultUser2,
-      description: content.results__page__description2,
+      name: "Yusupova Sevinchoy", // This seems duplicated, ensure it's intended
+      imageSrc: ResultUser1,
+      description: content.results__page__description2, // Ensure this property is defined in content
     },
   ];
+
   return (
     <div className="bg-white">
-      <div className="mx-auto   py-4 sm:px-6 sm:py-32 lg:px-8">
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
         {callouts.map((callout, index) => (
           <div
             key={index}
-            className="relative mb-7 isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+            className="relative isolate overflow-hidden px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
           >
             <svg
               viewBox="0 0 1024 1024"
@@ -49,9 +49,9 @@ export default function Example({ content }) {
                 {callout.description}
               </p>
             </div>
-            <div className="relative mt-0 h-screen lg:mt-8">
+            <div className="relative mt-16 h-screen lg:mt-8">
               <img
-                className="absolute left-0 h-screen top-24 w-[5/6] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                className="absolute left-2 top-0 w-[1/2] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
                 src={callout.imageSrc}
                 alt="App screenshot"
                 // width={}
