@@ -4,10 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        brightBackground: "#FDF8EE",
-        colorT: "rgb(226 232 240)",
-        lightText: "rgb(248 250 252)",
-        menuC: "rgba(0,0,0,0.4) ",
+        "brand-dark": "#111827", // Section background
+        accent: "#07B118", // Logo green for highlights
+        "light-text": "#F9FAFB", // Main text color
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

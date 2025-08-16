@@ -1,22 +1,22 @@
-export default function Example({ content }) {
+export default function Works({ content }) {
   return (
-    <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
-      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
-      <div className="mx-auto max-w-2xl lg:max-w-4xl">
-        <h2 className="mt-2 text-3xl text-center font-bold  text-green-500 sm:text-4xl">
-          {content.work__page1}
-        </h2>
-        <figure className="mt-10">
-          <blockquote className="text-center  text-xl leading-7 text-gray-900 sm:text-lg sm:leading-7">
-            <p
-              className="work__page"
-              dangerouslySetInnerHTML={{
-                __html: content.work__page2,
-              }}
-            />
-          </blockquote>
-        </figure>
+    <section className="bg-black py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-base font-semibold leading-7 text-gray-400">Our Process</h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-accent sm:text-4xl">
+            {content.work__page1}
+          </p>
+          <figure className="mt-10">
+            <blockquote className="text-center text-lg leading-8 text-gray-300 sm:text-xl sm:leading-9">
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: content.work__page2,
+                }}
+              />
+            </blockquote>
+          </figure>
+        </div>
       </div>
     </section>
   );

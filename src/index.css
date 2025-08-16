@@ -1,7 +1,25 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800;900&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;400;500;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-black text-light-text font-inter;
+    overflow-x: hidden;
+  }
+}
 
+/* Animation for sections */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
